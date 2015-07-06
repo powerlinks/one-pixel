@@ -15,7 +15,7 @@ class OnePixel
     /**
      * @return array
      */
-    public function getHeaders()
+    public static function getHeaders()
     {
         return array(
             'Content-type' => 'image/gif'
@@ -25,7 +25,7 @@ class OnePixel
     /**
      * @return string
      */
-    public function getPixel()
+    public static function getPixel()
     {
         return base64_decode('R0lGODlhAQABAJAAAP8AAAAAACH5BAUQAAAALAAAAAABAAEAAAICBAEAOw==');
     }

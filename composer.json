@@ -1,8 +1,8 @@
 {
   "name": "powerlinks/one-pixel",
   "type": "library",
-  "description": "",
-  "keywords": ["powerlinks", "one-pixel"],
+  "description": "Faster way to get a transparent pixel for tracking purpose",
+  "keywords": ["powerlinks", "one-pixel", "gif"],
   "homepage": "http://www.powerlinks.com/",
   "license": "MIT",
   "authors": [
