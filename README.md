@@ -8,36 +8,33 @@ This class return just a transparent single pixel for tracking purpose.
 {
     "require": {
         "powerlinks/one-pixel": "1.0.x-dev"
-    },
-    "repositories": [
-        {
-          "type": "git",
-          "url": "git@github.com:powerlinks/one-pixel.git"
-        }
-    ]
+    }
 }
 ```
 
 ## Usage
 
-```
+```php
 use PowerLinks\OnePixel\OnePixel;
 
+// instantiating usage 
 $onePixel = new OnePixel();
 $onePixel->getHeaders();
 $onePixel->getPixel();
+
+// static usage
+OnePixel::getHeaders();
+OnePixel::getPixel();
 ```
 
 To use this library with symfony/http-foundation: 2.6.x
 
-```
+```php
 use Symfony\Component\HttpFoundation\Response;
 use PowerLinks\OnePixel\OnePixel;
 
 $response = new Response();
-
-$onePixel = new OnePixel();
-$response->headers->add($onePixel->getHeaders());
-$response->setContent($onePixel->getPixel());
+$response->headers->add(OnePixel::getHeaders());
+$response->setContent(OnePixel::getPixel());
 $response->send();
 ```
